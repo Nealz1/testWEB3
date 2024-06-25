@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue';
 import { test_backend } from 'declarations/test_backend/index';
+import Blog from './components/Blog.vue';
+
 let greeting = ref('');
 
 async function handleSubmit(e) {
@@ -26,5 +28,6 @@ async function handleSubmit(e) {
       <button type="submit">Click Me!</button>
     </form>
     <section id="greeting">{{ greeting }}</section>
+    <Blog />
   </main>
 </template>
