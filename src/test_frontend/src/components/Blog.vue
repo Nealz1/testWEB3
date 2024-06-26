@@ -26,6 +26,5 @@ export default {
             this.wpisy = await test_backend.odczytaj_wpisy();
         }
     },
-
 }
 </script>
